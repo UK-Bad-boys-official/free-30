@@ -1,9 +1,8 @@
 name: Publish OTA Branches
 
+# The `development` branch is absent in this repository (default is `main`).
+# Keep publishing manual-only until the intended OTA channel/release branch is confirmed.
 on:
-  push:
-    branches:
-      - development
   workflow_dispatch:
     inputs:
       channel:
